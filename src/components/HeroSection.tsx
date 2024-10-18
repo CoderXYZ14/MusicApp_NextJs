@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
+import { Button } from "./ui/moving-border";
 
 const HeroSection = () => {
   return (
@@ -20,7 +21,9 @@ const HeroSection = () => {
           aspernatur ad voluptatem corporis.
         </p>
         <div className="mt-4 ">
-          <Link href={"/courses"}>Explore Courses</Link>
+          <Link href={"/courses"}>
+            <Button> Explore Courses</Button>
+          </Link>
         </div>
       </div>
     </div>
