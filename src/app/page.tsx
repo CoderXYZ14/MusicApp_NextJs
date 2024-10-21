@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import HeroSection from "../components/HeroSection";
 import FeaturedCourses from "@/components/FeaturedCourses";
 import WhyChooseUs from "@/components/WhyChooseUs";
+//import UpcomingWebinars from "@/components/UpcomingWebinars";
 
 export default function Home() {
   return (
