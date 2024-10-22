@@ -1,5 +1,8 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import featuredWebinars from "@/data/featured_webinar";
+import { HoverEffect } from "./ui/card-hover-effect";
 
 const UpcomingWebinars = () => {
   return (
@@ -13,7 +16,15 @@ const UpcomingWebinars = () => {
             Enhance Your Musical Journey
           </p>
         </div>
-        <div className="mt-10 text-white">2</div>
+        <div className="mt-10 text-white">
+          <HoverEffect
+            items={featuredWebinars.map((webinar) => ({
+              title: webinar.title,
+              description: webinar.description,
+              link: "/",
+            }))}
+          />
+        </div>
         <div className="mt-10 text-center">
           <Link
             href={"/"}
